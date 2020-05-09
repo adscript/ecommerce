@@ -17,7 +17,6 @@ export default function Header({ currentUser }) {
                 <Link to='/contact' className="option">
                     CONTACT
                 </Link>
-                {console.log(currentUser)}
                 {currentUser ?
                     <div className="option" onClick={() => auth.signOut()}>SIGN OUT</div>
                     :
